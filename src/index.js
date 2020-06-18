@@ -1,6 +1,7 @@
 //console.log("IT WORKS!!!!");
 let projects = [];
-
+import { addEvents } from './events' 
+addEvents();
 const Todo = (title, description, dueDate, priority) => {
    const getTitle = () => {
        return title;
@@ -28,7 +29,7 @@ const Project = (name) => {
     const getTodos = () => {
         todosArray;
     }
-    return {getName, getTodos}
+    return {getName, getTodos, addTodoToProject}
 }
 
 function addTodo() {
