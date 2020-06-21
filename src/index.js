@@ -1,6 +1,8 @@
 //console.log("IT WORKS!!!!");
 let projects = [];
 import { addEvents } from './events' 
+//import { cacheDom } from './dom'
+//console.log(cacheDom.addTodoButton.textContent);
 addEvents();
 const Todo = (title, description, dueDate, priority) => {
    const getTitle = () => {
