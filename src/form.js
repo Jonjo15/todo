@@ -26,8 +26,10 @@ function createInput() {
     let inputs = [];
     let selects = createSelect();
     const inputTitle = document.createElement("input");
+    inputTitle.classList.add("title");
     inputs.push(inputTitle);
     const inputDescription = document.createElement("input");
+    inputDescription.classList.add("description");
     inputs.push(inputDescription);
     inputs.push(selects.paraPriority);
     inputs.push(selects.selectPriority);
@@ -54,6 +56,7 @@ function createSelect() {
     selectPriority.appendChild(optionHigh);
     selectPriority.appendChild(optionMedium);
     selectPriority.appendChild(optionLow);
+    selectPriority.classList.add("priority");
     return { paraPriority, selectPriority}
 }
 
