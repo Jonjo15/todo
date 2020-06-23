@@ -11,6 +11,7 @@ function createButton() {
     const submit = document.createElement("button");
     submit.textContent = "Submit";
     submit.id = "submit";
+    submit.type = "button";
     submit.addEventListener("click", (e) => {
         //submit inputs to create a todo object
     });
